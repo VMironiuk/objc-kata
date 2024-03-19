@@ -37,34 +37,24 @@
 
 - (BOOL)isFirstArray:(NSArray*)firstArray theSameAsSecondArray:(NSArray*)secondArray {
     if (firstArray.count != secondArray.count) { return NO; }
-    if (firstArray.count == 0 && secondArray.count == 0) { return YES; }
+    if (firstArray.count == 0 ) { return YES; }
     
-    NSMutableDictionary* firstFrequencyCounter = [[NSMutableDictionary alloc] init];
-    NSMutableDictionary* secondFrequencyCounter = [[NSMutableDictionary alloc] init];
+    NSMutableDictionary* firstFrequencyCounter = [NSMutableDictionary dictionary];
+    NSMutableDictionary* secondFrequencyCounter = [NSMutableDictionary dictionary];
     
     for (NSNumber* number in firstArray) {
-        if (firstFrequencyCounter[number] == nil) {
-            firstFrequencyCounter[number] = @1;
-        } else {
-            NSNumber* oldValue = firstFrequencyCounter[number];
-            NSNumber* newValue = [[NSNumber alloc] initWithInt:oldValue.intValue + 1];
-            firstFrequencyCounter[number] = newValue;
-        }
+        firstFrequencyCounter[number] = @([firstFrequencyCounter[number] intValue] + 1);
     }
     
     for (NSNumber* number in secondArray) {
-        if (secondFrequencyCounter[number] == nil) {
-            secondFrequencyCounter[number] = @1;
-        } else {
-            NSNumber* oldValue = secondFrequencyCounter[number];
-            NSNumber* newValue = [[NSNumber alloc] initWithInt:oldValue.intValue + 1];
-            secondFrequencyCounter[number] = newValue;
-        }
+        secondFrequencyCounter[number] = @([secondFrequencyCounter[number] intValue] + 1);
     }
     
-    for (NSNumber* key in firstFrequencyCounter.allKeys) {
-        if (secondFrequencyCounter[[[NSNumber alloc] initWithInt:key.intValue * key.intValue]] == nil) { return NO; }
-        if (firstFrequencyCounter[key] != secondFrequencyCounter[[[NSNumber alloc] initWithInt:key.intValue * key.intValue]]) { return NO; }
+    for (NSNumber* key in firstArray) {
+        NSNumber* squaredKey = @([key intValue] * [key intValue]);
+        if (!secondFrequencyCounter[squaredKey] || [firstFrequencyCounter[key] intValue] != [secondFrequencyCounter[squaredKey] intValue]) {
+            return NO;
+        }
     }
 
     return YES;
