@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2EAFB9AF2BAC2DB0000774EA /* AreThereDuplicates.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAFB9AE2BAC2DB0000774EA /* AreThereDuplicates.m */; };
 		2EBB111C2BA57CB90047A4B4 /* AddUpTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EBB111B2BA57CB90047A4B4 /* AddUpTo.m */; };
 		2ECF48D52BA43BCF00434953 /* ObjcKata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECF48CC2BA43BCF00434953 /* ObjcKata.framework */; };
 		2ECF48DB2BA43BCF00434953 /* ObjcKata.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ECF48CF2BA43BCF00434953 /* ObjcKata.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -24,6 +25,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2EAFB9AE2BAC2DB0000774EA /* AreThereDuplicates.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AreThereDuplicates.m; sourceTree = "<group>"; };
 		2EBB111B2BA57CB90047A4B4 /* AddUpTo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddUpTo.m; sourceTree = "<group>"; };
 		2ECF48CC2BA43BCF00434953 /* ObjcKata.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjcKata.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ECF48CF2BA43BCF00434953 /* ObjcKata.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjcKata.h; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			children = (
 				2EBB111B2BA57CB90047A4B4 /* AddUpTo.m */,
 				2EFC980A2BA99399009D302E /* Same.m */,
+				2EAFB9AE2BAC2DB0000774EA /* AreThereDuplicates.m */,
 			);
 			path = ObjcKataTests;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EAFB9AF2BAC2DB0000774EA /* AreThereDuplicates.m in Sources */,
 				2EBB111C2BA57CB90047A4B4 /* AddUpTo.m in Sources */,
 				2EFC980B2BA99399009D302E /* Same.m in Sources */,
 			);
