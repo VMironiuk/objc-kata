@@ -12,6 +12,7 @@
 		2EBB111C2BA57CB90047A4B4 /* AddUpTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EBB111B2BA57CB90047A4B4 /* AddUpTo.m */; };
 		2ECF48D52BA43BCF00434953 /* ObjcKata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECF48CC2BA43BCF00434953 /* ObjcKata.framework */; };
 		2ECF48DB2BA43BCF00434953 /* ObjcKata.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ECF48CF2BA43BCF00434953 /* ObjcKata.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2ED1DE2B2BCE53B200C543DB /* NestedEvenSum.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED1DE2A2BCE53B200C543DB /* NestedEvenSum.m */; };
 		2EFC980B2BA99399009D302E /* Same.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFC980A2BA99399009D302E /* Same.m */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		2ECF48CC2BA43BCF00434953 /* ObjcKata.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjcKata.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ECF48CF2BA43BCF00434953 /* ObjcKata.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjcKata.h; sourceTree = "<group>"; };
 		2ECF48D42BA43BCF00434953 /* ObjcKataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjcKataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ED1DE2A2BCE53B200C543DB /* NestedEvenSum.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NestedEvenSum.m; sourceTree = "<group>"; };
 		2EFC980A2BA99399009D302E /* Same.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Same.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +89,7 @@
 				2EFC980A2BA99399009D302E /* Same.m */,
 				2EAFB9AE2BAC2DB0000774EA /* AreThereDuplicates.m */,
 				2E5619712BAF075F00A68806 /* AveragePair.m */,
+				2ED1DE2A2BCE53B200C543DB /* NestedEvenSum.m */,
 			);
 			path = ObjcKataTests;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 			files = (
 				2EAFB9AF2BAC2DB0000774EA /* AreThereDuplicates.m in Sources */,
 				2EBB111C2BA57CB90047A4B4 /* AddUpTo.m in Sources */,
+				2ED1DE2B2BCE53B200C543DB /* NestedEvenSum.m in Sources */,
 				2EFC980B2BA99399009D302E /* Same.m in Sources */,
 				2E5619722BAF075F00A68806 /* AveragePair.m in Sources */,
 			);
